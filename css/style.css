@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #f77949;
+  --bg-blue: #37418e;
+  --bg-dark-blue: #292b70;
+  --bg-gray: #ecf0f9;
+
+  --text-black: #1f1f1f;
+  --text-blue: #1f294c;
+  --text-gray: #6d6e7b;
+
+  --primary-font: 'Open Sans Condensed', sans-serif;
+  --secondary-font: 'open sans', sans-serif;
+}
+
+body {
+  font-family: var(--secondary-font);
+  background: url(../images/page-background.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: initial;
+  /* overflow-x: hidden; */
+}
+
+/* custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-gray);
+}
+
+section {
+  padding: 85px 0 ;
+}
+
+.mainBtn {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  background: var(--secondary-color);
+  border-radius: 1.625rem;
+  padding: 0.625rem 2.3rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: inline-block;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.mainBtn:hover,
+.mainBtn:focus {
+  background: var(--bg-blue);
+  color: white;
+  animation: mainBtn 1s ease-in-out 0s infinite alternate both;
+}
+
+@keyframes mainBtn {
+  0% {
+    transform: scale(1.005);
+  }
+
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+h1 {
+  font-size: 3.75rem;
+  font-weight: 900;
+  font-family: var(--primary-font);
+  color: var(--text-blue);
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 3rem;
+  font-family: var(--primary-font);
+  margin-bottom: 0.9rem;
+  letter-spacing: 0px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--primary-font);
+  color: var(--text-blue);
+  margin-bottom: 0.95rem;
+}
+
+p {
+  color: var(--text-gray);
+  font-size: 0.95rem;
+  line-height: 01.2rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+input:hover,
+input:focus,
+textarea,
+textarea:focus {
+  border-color: var(--secondary-color) !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* Navbar styling */
+.navbar {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  width: 9.375rem;
+}
+
+.navbar-brand img {
+  width: 100%;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin: 0 0.625rem;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  color: var(--text-blue);
+  text-transform: uppercase;
+  font-size: 1.02rem;
+  font-weight: 700;
+  font-family: var(--primary-font);
+}
+
+.navbar .navbar-nav .nav-item .nav-link.active {
+  color: var(--secondary-color) !important;
+}
+
+/* Onscroll css */
+.headerScrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 85px;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* banner styling */
+.bannerWrapper,.bannerWrapper {
+  padding: 6.25rem 0;
+}
+
+.bannerWrapper .row {
+  min-height: 80vh;
+  align-items: center;
+}
+
+/* services section styling */
+.servicesWrapper .service .card{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transition: all 0.3s ease-in-out;
+}
+.servicesWrapper .service .card:hover{
+  transform: scale(0.95);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.servicesWrapper .card h3{
+  font-weight: 800;
+}
+.servicesWrapper .card h3 span{
+  color: var(--secondary-color);
+}
+.servicesWrapper .pointsImg img {
+  width: 100%;
+}
+
+/* Blog Section */
+.newsletterWrapper{
+  background: var(--bg-blue);
+}
+.newsletter{
+  width: 50%;
+  margin: auto;
+}
+.newsletterWrapper .newsletter .form-control{
+  background: var(--bg-dark-blue);
+  border-color: var(--bg-dark-blue) !important;
+  border: solid;
+  border-radius: 1.5rem;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+.newsletterWrapper .newsletter input::placeholder{
+  color: #c7c7bd;
+}
+
+.blogWrapper .card .date, .blogWrapper .card a:hover{
+  color: var(--secondary-color);
+}
+.blogWrapper .card h3 a{
+  color: var(--text-blue);
+  text-decoration: none;
+}
+
+/* Contact section css */
+.contactWrapper input, .contactWrapper textarea{
+  background: white;
+  border-color: var(--bg-blue);
+  border-radius: 15px;
+  color: var(--text-gray);
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+}
+
+/* footer section */
+section.footer{
+  padding: 1.3rem 0 0.1rem;
+}
+.footer{
+  background: var(--bg-dark-blue);
+}
+.footer ul li a:hover {
+  color: var(--secondary-color) !important;
+}

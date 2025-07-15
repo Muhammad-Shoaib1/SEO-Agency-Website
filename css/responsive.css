@@ -1,0 +1,65 @@
+@media (max-width: 1200px) {
+  :root {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  :root {
+    font-size: 13.5px;
+  }
+
+  .navbar .navbar-nav .nav-item {
+    margin: 0.7rem 0;
+  }
+
+  .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 13px;
+  }
+
+  .servicesWrapper .row .pointsImg img {
+    max-width: 40% !important;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 576px) {
+  :root {
+    font-size: 14.5px;
+  }
+
+  .bannerWrapper .row {
+    min-height: 0vh;
+  }
+
+  .bannerWrapper img,
+  .bannerWrapper img {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
+
+  .servicesWrapper .row .pointsImg img {
+    max-width: 80% !important;
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    font-size: 13.5px;
+  }
+
+  .newsletterWrapper .newsletter input {
+    width: 100% !important;
+  }
+}
