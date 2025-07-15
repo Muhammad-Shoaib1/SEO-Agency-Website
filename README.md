@@ -1,2 +1,3 @@
-# SEO-Agency-Website
-A responsive SEO agency landing page template built with Bootstrap 5, Font Awesome, and custom CSS.
+# SEO Agency Website
+
+This is a responsive SEO Agency website built using Bootstrap.
